@@ -35,6 +35,12 @@
     grid-template-columns: 1fr 200px;
 }
 
+@media (max-width: 393px){
+    .formSection__form{
+        grid-template-columns: 1fr;
+    }
+}
+
 .formSection__header{
     background: white;
     font-size: 25px;
@@ -55,6 +61,13 @@
     border: none;
 }
 
+@media (max-width: 393px){
+    .formSection__button{
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
+
 .toDoList{
     background-color: white;
     margin-top: 10px;
@@ -66,5 +79,51 @@
 }
 
 .toDoList__list{
+    max-width: 1200px;
     padding: 20px;
+}
+
+.toDoList__list--item{
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 35px 1fr 35px;
+    align-items: center;
+    word-wrap: wrap;
+}
+
+.taskDescription{
+    padding: 15px;
+}
+
+.toggleTask{
+    width: 30px;
+    height: 30px;
+    background: green url("https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-512.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border:none;
+    outline: none;
+}
+
+.toggleTask--ok{
+    background: orange url("https://www.loversloc.com/skin/frontend/sm_market/default/images/icons/delete-new-icon.png");
+
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.removeTask{
+    width: 30px;
+    height: 30px;
+    background: red url("https://cdn2.iconfinder.com/data/icons/designers-and-developers-icon-set/32/recyclebin-512.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border:none;
+    outline: none;
 }
